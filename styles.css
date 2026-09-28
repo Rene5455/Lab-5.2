@@ -1,0 +1,49 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  padding-top: 56px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+#main-logo {
+  color: #0d6efd !important;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('images/card1.jpg') no-repeat center/cover;
+  min-height: 50vh;
+  padding: 60px 20px;
+}
+
+.custom-card {
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.custom-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.custom-box-model {
+  padding: 30px;
+  border-left: 4px solid #0d6efd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 40vh;
+    padding: 40px 15px;
+  }
+
+  .custom-box-model {
+    padding: 20px;
+  }
+}
